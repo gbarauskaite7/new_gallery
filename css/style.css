@@ -1,0 +1,77 @@
+@font-face {
+    font-family: grazutis-tekstukas ;
+    src: url(../font/DorothyValentine-MVanp.ttf);
+}
+
+@font-face{
+    font-family: footeris;
+    src: url(../font/SellenaBrush-x3JyK.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(224, 224, 201);
+    color: rgb(224, 173, 111);
+    overflow-x: hidden;
+}
+
+
+
+h1 {
+    font-family: grazutis-tekstukas;
+    font-size: 8vw;
+    text-align: center;
+    padding: 20px;
+}
+
+footer{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 20px;
+    color: rgb(224, 224, 201);
+    background-color: rgb(224, 173, 111);
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(224, 173, 111);;
+}
+
+li{
+    height: 30vh;
+    flex-grow: 1;
+
+}
+
+li:hover{
+    z-index: 1;
+}
+
+
+
+li:last-child{
+    flex-grow: 0;
+}
+
+img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(85%);
+    transition: all 0.4s;
+}
+
+img:hover{
+    filter: grayscale(0%) brightness(100%);  
+    transform: scale(1.1);box-shadow: 0 0 50px 10px black;
+}
